@@ -1,0 +1,29 @@
+
+.data{
+    padding:5%;
+    text-align: center;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    height:80vh;
+    justify-content:center;
+}
+.data,.links_container,.links_image{
+    display: flex;
+}
+.links_container{
+    border: 1px solid black;
+    justify-content: space-evenly;
+}
+.links_image{
+    border: 1px solid black;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.links_image>img{
+    padding: 0% 5%;
+}
+.links_image>img:hover{
+    transform:scale(1.5) rotate(360deg);
+    transition: all 0.5s;
+}
