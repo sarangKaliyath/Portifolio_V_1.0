@@ -1,9 +1,10 @@
 .main_container{
     border: 1px solid red;
     width: 100vw;
-    /* height: 100vh; */
+    /* height: 60vh; */
     flex-direction: column;
     justify-content: center;
+    padding:10% 0%;
 }
 .about_contact,.main_container{
     display: flex;
@@ -30,7 +31,6 @@ button>img{
 
 
 .about_me_container{
-    padding-top: 5%;
     display: grid;
     justify-content: center;
     grid-template-columns: 20% 70%;
