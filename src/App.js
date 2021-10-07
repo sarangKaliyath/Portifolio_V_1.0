@@ -1,5 +1,4 @@
 import "./App.css";
-// import { Routes } from "./Routes/Routes";
 import { Navbar } from './Components/Navbar';
 import { SocialLinks } from './Components/SocialLinks';
 import { About } from './Components/About';
