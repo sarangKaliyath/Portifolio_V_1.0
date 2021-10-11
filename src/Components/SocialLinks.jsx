@@ -10,17 +10,17 @@ export const SocialLinks = () => {
     <div>
       <div className="data" id="home">
         <div>
-          <h1>I'm Sarang Kaliyath.</h1>
+          <h1 className="home_title">I'm Sarang Kaliyath.</h1>
         </div>
         <div>
-          <h3>
-            I am a Full Stack Web Developer focusing on creating seamless user
+          <h3 className="home_text">
+            I'm a Full Stack Web Developer emphasizing on creating seamless user
             friendly applications.
           </h3>
           <div className="links_container">
             <div className="links_image">
               <img
-                src="/github.svg"
+                src="/github_light.svg"
                 alt=""
                 onClick={() => {
                   handleClick("https://github.com/sarangKaliyath");

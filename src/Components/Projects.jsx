@@ -9,10 +9,10 @@ export const Projects = () => {
       </div>
       <div>
         <div className="project_container">
-          <div>
+          <div className="project_box">
             <div>
               <h2>Nykaa</h2>
-              <div>
+              <div className="icons">
                 <img src="/github.svg" alt="" />
               </div>
             </div>
@@ -29,29 +29,29 @@ export const Projects = () => {
               <h4>Built using JS, HTML and, CSS</h4>
             </div>
           </div>
-          <div>
+          <div className="project_box">
             <div>
               <h2>Nykaa V2.0</h2>
-              <div>
+              <div className="icons">
                 <img src="/github.svg" alt="" />
               </div>
             </div>
             <h4>
               <div>
                 Clone of a Popular E-commerce Website that sells beauty,
-                wellness, and fashion products
+                wellness, and fashion products.
               </div>
             </h4>
             <div className="project_image">
               <img src="/home_page.png" alt="" />
             </div>
-            <h4>Built using Express,MongoDB, Node.js</h4>
+            <h4>Built using Express, MongoDB, Node.js and, EJS</h4>
           </div>
 
-          <div>
+          <div className="project_box">
             <div>
               <h2>Star Wars</h2>
-              <div>
+              <div className="icons">
                 <img src="/github.svg" alt="" />
               </div>
             </div>

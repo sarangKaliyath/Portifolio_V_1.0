@@ -1,11 +1,12 @@
 import React from "react";
 import "./About.css";
 import { saveAs } from "file-saver";
+import { Skills } from "./Skills";
 
 export const About = () => {
   const handleDownload = () => {
     saveAs(
-      "https://drive.google.com/u/0/uc?id=1ggrGCygppq9ViSJ9cdVpwBDWOq4481EJ&export=download",
+      "https://drive.google.com/u/0/uc?id=1ggrGCygppq9ViSJ9cdVpwBDWOq4481EJ&export=sharing",
       "resume.pdf"
     );
   };
@@ -17,38 +18,55 @@ export const About = () => {
           <img src="/user-02.jpg" alt="" />
         </div>
         <div>
-          <h2>About Me</h2>
+          <h2 style={{ fontSize: "2em" }} className="About_me">
+              About Me
+          </h2>
 
           <h4>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam.
+            <div>
+              <p>
+                <div>
+                  My name is Sarang Kaliyath. Started as an Electrical engineer
+                  but soon found the light in web development.
+                </div>
+                <div>
+                  It's barely been a minute since I have started learning to
+                  code, building simple real-world apps is something I duly
+                  cherish.
+                </div>
+              </p>
+              <p>
+                <div>
+                  To quote Steve Jobs “The only way to do great work is to love
+                  what you do. If you haven’t found it yet, keep looking. Don’t
+                  settle.”
+                </div>
+              </p>
+              <p>
+                <div>
+                  I am diligently looking for opportunities to work as a web
+                  developer.
+                </div>
+              </p>
+            </div>
           </h4>
         </div>
       </div>
-      <div className="about_contact">
-        <h2>Contact Details</h2>
-        <h4>
-          <div>Sarang Kaliyath</div>
-          <div>75 8830 3199</div>
-          <div>sarang1221@gmail.com</div>
-        </h4>
-        <div>
-          <div className="about_button">
-            
-            <button onClick={handleDownload}>
-               <img src="/download.png" alt="" />
-               DOWNLOAD CV 
-            </button>
-            
-          </div>
+      <div className="about_skills">
+        <Skills cStyle="html" text={"HTML"} />
+        <Skills cStyle="css" text={"CSS"} />
+        <Skills cStyle="javaScript" text={"JavaScript"} />
+        <Skills cStyle="react" text={"React"} />
+        <Skills cStyle="node" text={"Node.js"} />
+        <Skills cStyle="express" text={"Express"} />
+        <Skills cStyle="mongo" text={"MongoDB"} />
+      </div>
+      <div>
+        <div className="cv_button">
+          <button onClick={handleDownload}>
+            {/* <img src="/download.png" alt="" /> */}
+            DOWNLOAD RESUME
+          </button>
         </div>
       </div>
     </div>

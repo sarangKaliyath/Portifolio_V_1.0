@@ -1,46 +1,102 @@
-.main_container{
-    border: 1px solid red;
-    width: 100vw;
-    /* height: 60vh; */
-    flex-direction: column;
-    justify-content: center;
-    padding:10% 0%;
+.main_container {
+  /* border: 1px solid red; */
+  width: 100vw;
+  /* height: 60vh; */
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 0%;
+  background-color: #f0f5f9;
+  font-family: "Noto Sans Mono", monospace;
 }
-.about_contact,.main_container{
-    display: flex;
+.about_skills,
+.main_container {
+  display: flex;
 }
-.about_contact{
-    width: 50%;
-    justify-content: space-between;
+.about_skills {
+  /* width: 30%; */
+  width: 70vw;
+  justify-content: space-between;
 }
-.about_button{
-    margin-top: 4%;
+button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 160px;
+  background-color: #1e2022;
+  color: #f0f5f9;
+  cursor: pointer;
+  font-family: "Noto Sans Mono", monospace;
+}
+button:hover {
+  color: #f04308;
+  transform: scale(1.05);
+}
 
-}
-button{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 40px;
-    width: 160px;
-}
-button>img{
-    width: 10%;
+button > img {
+  width: 10%;
 }
 
-
-
-.about_me_container{
+@media (max-width: 900px) {
+  .about_me_container {
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: center;
+  }
+}
+@media (min-width: 900px) {
+  .about_me_container {
     display: grid;
     justify-content: center;
     grid-template-columns: 20% 70%;
-}
-.about_me_image>img{
-    padding-top: 10%;
-    width: 50%;
+  }
 }
 
-.about_contact{
-    margin-left: 25%;
-    flex-direction: column; 
+.about_me_image > img {
+  padding-top: 10%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.about_skills {
+  margin-top: 5%;
+  flex-direction: column;
+  color: #f0f5f9;
+}
+
+.cv_button,
+.about_skills {
+  margin-left: 25%;
+}
+.cv_button {
+  margin-top: 4%;
+}
+
+.html,
+.css {
+  width: 75%;
+}
+.javaScript,
+.react {
+  width: 70%;
+}
+.node {
+  width: 68%;
+}
+.express,
+.mongo {
+  width: 60%;
+}
+
+.html,
+.css,
+.javaScript,
+.react,
+.node,
+.express,
+.mongo {
+  background-color: #52616b;
+}
+.about_me {
+  font-size: 2em !important;
 }
