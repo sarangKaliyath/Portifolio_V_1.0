@@ -1,11 +1,7 @@
 .contact_container {
   color: hsl(210, 6%, 13%) !important;
   padding: 10% 0%;
-  font-family: 'Noto Sans Mono', monospace;
-
-}
-.contact_container > div {
-  /* border: 1px solid black; */
+  font-family: "Noto Sans Mono", monospace;
 }
 
 @media (min-width: 900px) {
@@ -13,16 +9,14 @@
     margin-left: 10%;
     display: grid;
     grid-template-columns: 40% 50%;
-    /* text-align: left; */
   }
-  .contact_input{
-      justify-content:space-evenly;
+  .contact_input {
+    justify-content: space-evenly;
   }
 }
 
 @media (max-width: 900px) {
   .contact_container {
-    /* margin-left: 10%; */
     display: grid;
     grid-template-rows: auto auto;
   }
@@ -31,53 +25,69 @@
 .reach_out > div {
   display: flex;
   justify-content: center;
-
   font-size: 5vmin;
-  /* border: 1px solid black; */
-
   font-weight: 500;
 }
 
 .reach_out,
 .contact_input {
-  display: flex;
   flex-direction: column;
 }
 
+.say_hello_links > div,
+.reach_out,
 .contact_input {
-    padding-top: 10%;
-    /* padding-bottom: 5%; */
-    justify-content:space-evenly;
+  display: flex;
+}
+.say_hello_links {
+  padding: 5% 0%;
+}
+.say_hello_links > div {
+  width: 50%;
+}
+.say_hello_links > div,
+.contact_input {
+  justify-content: space-evenly;
+}
+.say_hello_links div > img:hover {
+  transform: scale(1.8) rotate(360deg);
+  transition: all 0.5s;
+}
+
+.contact_input {
+  padding-top: 10%;
   align-items: center;
 }
-.contact_input > input,.contact_message{
+.contact_input > input,
+.contact_message {
   width: 60%;
   margin-bottom: 3%;
 }
 
 .contact_message {
-    height:200px;
+  height: 200px;
 }
-.contact_name,.contact_email{
-    height: 20px;
+.contact_name,
+.contact_email {
+  height: 20px;
 }
-.contact_email:focus,.contact_name:focus,.contact_message:focus{
-outline:none;
-}
-
-.contact_input>button{
-    width: 60%;
-}
-.temp_header{
-    color:#52616B;
-    font-weight: 400 !important;
-}
-.submit_button{
-    border: none;
-}
-.submit_button:hover{
-color:#F04308;
-transform:scale(1.05);
+.contact_email:focus,
+.contact_name:focus,
+.contact_message:focus {
+  outline: none;
 }
 
-
+.contact_input > button {
+  width: 60%;
+}
+.temp_header {
+  color: #52616b;
+  font-weight: 400 !important;
+}
+.submit_button {
+  border: none;
+}
+.submit_button:hover {
+  color: #f04308;
+  transform: scale(1.05);
+}

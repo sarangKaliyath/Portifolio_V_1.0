@@ -1,16 +1,9 @@
 import React from "react";
 import "./About.css";
-import { saveAs } from "file-saver";
 import { Skills } from "./Skills";
+import { gotoLink } from "./Onclick_function.js";
 
 export const About = () => {
-  const handleDownload = () => {
-    saveAs(
-      "https://drive.google.com/file/d/1WlxLkivnuMQNYNz2ymIMBtIg96_ZKsCA/view?usp=sharing",
-      "resume.pdf"
-    );
-  };
-
   return (
     <div id="about" className="main_container">
       <div className="about_me_container">
@@ -25,28 +18,22 @@ export const About = () => {
           <h4>
             <div>
               <p>
-                <div>
-                  My name is Sarang Kaliyath. Started as an Electrical engineer
-                  but soon found the light in web development.
-                </div>
-                <div>
-                  It's barely been a minute since I have started learning to
-                  code, building simple real-world apps is something I duly
-                  cherish.
-                </div>
+                My name is Sarang Kaliyath. Started as an Electrical engineer
+                but soon found the light in web development.
               </p>
               <p>
-                <div>
-                  To quote Steve Jobs “The only way to do great work is to love
-                  what you do. If you haven’t found it yet, keep looking. Don’t
-                  settle.”
-                </div>
+                It's barely been a minute since I have started learning to code,
+                building simple real-world apps is something I duly cherish.
+              </p>
+
+              <p>
+                To quote Steve Jobs “The only way to do great work is to love
+                what you do. If you haven’t found it yet, keep looking. Don’t
+                settle.”
               </p>
               <p>
-                <div>
-                  I am diligently looking for opportunities to work as a web
-                  developer.
-                </div>
+                I am diligently looking for opportunities to work as a web
+                developer.
               </p>
             </div>
           </h4>
@@ -63,8 +50,13 @@ export const About = () => {
       </div>
       <div>
         <div className="cv_button">
-          <button onClick={handleDownload}>
-            {/* <img src="/download.png" alt="" /> */}
+          <button
+            onClick={() => {
+              gotoLink(
+                "https://drive.google.com/file/d/1WlxLkivnuMQNYNz2ymIMBtIg96_ZKsCA/view?usp=sharing"
+              );
+            }}
+          >
             DOWNLOAD RESUME
           </button>
         </div>

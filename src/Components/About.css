@@ -1,24 +1,26 @@
 .main_container {
-  /* border: 1px solid red; */
   width: 100vw;
-  /* height: 60vh; */
-  flex-direction: column;
   justify-content: center;
   padding: 10% 0%;
   background-color: #f0f5f9;
   font-family: "Noto Sans Mono", monospace;
 }
 .about_skills,
-.main_container {
+.main_container,
+button,
+.cv_button {
   display: flex;
 }
+.about_skills,
+.main_container {
+  flex-direction: column;
+}
 .about_skills {
-  /* width: 30%; */
   width: 70vw;
   justify-content: space-between;
 }
+
 button {
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 40px;
@@ -37,18 +39,27 @@ button > img {
   width: 10%;
 }
 
+.about_me_container {
+  display: grid;
+}
+
 @media (max-width: 900px) {
   .about_me_container {
-    display: grid;
     grid-template-rows: auto auto;
     text-align: center;
+  }
+  .cv_button {
+    width: 50vw;
+    justify-content: center;
   }
 }
 @media (min-width: 900px) {
   .about_me_container {
-    display: grid;
     justify-content: center;
     grid-template-columns: 20% 70%;
+  }
+  .cv_button {
+    width: 40vw;
   }
 }
 
@@ -60,7 +71,6 @@ button > img {
 
 .about_skills {
   margin-top: 5%;
-  flex-direction: column;
   color: #f0f5f9;
 }
 

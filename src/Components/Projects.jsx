@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import { gotoLink } from "./Onclick_function.js";
 
 export const Projects = () => {
   return (
@@ -13,7 +14,15 @@ export const Projects = () => {
             <div>
               <h2>Nykaa</h2>
               <div className="icons">
-                <img src="/github.svg" alt="" />
+                <img
+                  src="/github.svg"
+                  alt=""
+                  onClick={() => {
+                    gotoLink(
+                      "https://github.com/sarangKaliyath/Nykaa_Clone.git"
+                    );
+                  }}
+                />
               </div>
             </div>
             <h4>
@@ -33,13 +42,21 @@ export const Projects = () => {
             <div>
               <h2>Nykaa V2.0</h2>
               <div className="icons">
-                <img src="/github.svg" alt="" />
+                <img
+                  src="/github.svg"
+                  alt=""
+                  onClick={() => {
+                    gotoLink(
+                      "https://github.com/sarangKaliyath/Nykaa_Clone_V2.0.git"
+                    );
+                  }}
+                />
               </div>
             </div>
             <h4>
               <div>
-                Clone of a Popular E-commerce Website that sells beauty,
-                wellness, and fashion products.
+                This is the predecessor of the the Nykaa website built with a
+                distinguishable tech-stack.
               </div>
             </h4>
             <div className="project_image">
@@ -52,14 +69,19 @@ export const Projects = () => {
             <div>
               <h2>Star Wars</h2>
               <div className="icons">
-                <img src="/github.svg" alt="" />
+                <img
+                  src="/github.svg"
+                  alt=""
+                  onClick={() => {
+                    gotoLink(
+                      "https://github.com/sarangKaliyath/star_wars_api/tree/master/starWars"
+                    );
+                  }}
+                />
               </div>
             </div>
             <h4>
-              <div>
-                A self designed project inspired by characters of
-                {/* wellness, and fashion products */}
-              </div>
+              <div>A self designed project inspired by characters of</div>
               <div>Star Wars franchise.</div>
             </h4>
             <div className="project_image">

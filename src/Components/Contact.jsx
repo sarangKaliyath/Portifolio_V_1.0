@@ -1,7 +1,6 @@
 import React from "react";
-import { saveAs } from "file-saver";
 import "./Contact.css";
-import { Link } from 'react-router-dom';
+import { gotoLink } from "./Onclick_function.js";
 
 export const Contact = () => {
   return (
@@ -15,6 +14,33 @@ export const Contact = () => {
         <div>sarang1221@gmail.com</div>
         <div className="temp_header">Phone</div>
         <div>+91 7588303199</div>
+        <div className="say_hello_links">
+          <div>
+            <img
+              onClick={() => {
+                gotoLink("https://github.com/sarangKaliyath");
+              }}
+              src="./github.svg"
+              alt=""
+            />
+            <img
+              onClick={() => {
+                gotoLink(
+                  "https://www.linkedin.com/in/sarang-kaliyath-84034a122/"
+                );
+              }}
+              src="./linkedin_dark.svg"
+              alt=""
+            />
+            <img
+              onClick={() => {
+                gotoLink("https://twitter.com/KaliyathSarang");
+              }}
+              src="./twitter_dark.svg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
       <div className="contact_input">
         <input

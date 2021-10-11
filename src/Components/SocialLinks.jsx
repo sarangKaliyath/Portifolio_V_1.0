@@ -1,11 +1,8 @@
 import React from "react";
 import "../Components/SocialLinks.css";
+import { gotoLink } from "./Onclick_function.js";
 
 export const SocialLinks = () => {
-  const handleClick = (e) => {
-    window.location.assign(e);
-  };
-
   return (
     <div>
       <div className="data" id="home">
@@ -23,21 +20,21 @@ export const SocialLinks = () => {
                 src="/github_light.svg"
                 alt=""
                 onClick={() => {
-                  handleClick("https://github.com/sarangKaliyath");
+                  gotoLink("https://github.com/sarangKaliyath");
                 }}
               />
               <img
                 src="/twitter.svg"
                 alt=""
                 onClick={() => {
-                  handleClick("https://twitter.com/KaliyathSarang");
+                  gotoLink("https://twitter.com/KaliyathSarang");
                 }}
               />
               <img
                 src="/linkedin.svg"
                 alt=""
                 onClick={() => {
-                  handleClick(
+                  gotoLink(
                     "https://www.linkedin.com/in/sarang-kaliyath-84034a122/"
                   );
                 }}
