@@ -6,7 +6,7 @@ import { Skills } from "./Skills";
 export const About = () => {
   const handleDownload = () => {
     saveAs(
-      "https://drive.google.com/u/0/uc?id=1ggrGCygppq9ViSJ9cdVpwBDWOq4481EJ&export=sharing",
+      "https://drive.google.com/file/d/1WlxLkivnuMQNYNz2ymIMBtIg96_ZKsCA/view?usp=sharing",
       "resume.pdf"
     );
   };
@@ -19,7 +19,7 @@ export const About = () => {
         </div>
         <div>
           <h2 style={{ fontSize: "2em" }} className="About_me">
-              About Me
+            About Me
           </h2>
 
           <h4>
