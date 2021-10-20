@@ -82,7 +82,12 @@
 }
 .temp_header {
   color: #52616b;
-  font-weight: 400 !important;
+  padding: 20px ;
+}
+.temp_header:hover{
+  transform: scale(1.2) rotate(360deg);
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
 .submit_button {
   border: none;

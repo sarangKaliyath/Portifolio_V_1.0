@@ -1,19 +1,17 @@
 import React from "react";
 import "./About.css";
-import { Skills } from "./Skills";
 import { gotoLink } from "./Onclick_function.js";
+import { SkillsIcon } from "./SkillsIcon";
 
 export const About = () => {
   return (
     <div id="about" className="main_container">
       <div className="about_me_container">
         <div className="about_me_image">
-          <img src="/user-02.jpg" alt="" />
+          <img src="/user-01.jpg" alt="" />
         </div>
         <div>
-          <h2 style={{ fontSize: "2em" }} className="About_me">
-            About Me
-          </h2>
+          <h2 className="about_me">About Me</h2>
 
           <h4>
             <div>
@@ -39,14 +37,11 @@ export const About = () => {
           </h4>
         </div>
       </div>
-      <div className="about_skills">
-        <Skills cStyle="html" text={"HTML"} />
-        <Skills cStyle="css" text={"CSS"} />
-        <Skills cStyle="javaScript" text={"JavaScript"} />
-        <Skills cStyle="react" text={"React"} />
-        <Skills cStyle="node" text={"Node.js"} />
-        <Skills cStyle="express" text={"Express"} />
-        <Skills cStyle="mongo" text={"MongoDB"} />
+      <div>
+        <h2 className="my_skills">My Skills</h2>
+        <div className="skills_icon">
+          <SkillsIcon />
+        </div>
       </div>
       <div>
         <div className="cv_button">
